@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çevre Dostu Alışveriş Anketi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 70%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            background-color: #033D43;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.2em;
+        }
+        h1 {
+            color: #033D43;
+        }
+        .question {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .question p {
+            font-size: 1.2em;
+        }
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+        .question textarea {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        .next-btn {
+            background-color: #033D43;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .next-btn:hover {
+            background-color: #026064;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            🌿 <strong>Çevre Dostu Alışveriş Anketi</strong><br><br>
+            Merhaba! 👋 Sürdürülebilir ve çevre dostu ürünler hakkında fikrini öğrenmek istiyoruz. Katılımın bizim için çok değerli!<br><br>
+            Bu kısa anketi doldurarak sürdürülebilir alışverişin geleceğini şekillendirmemize yardımcı olabilirsin. 🛍️♻️<br><br>
+            👉 <strong>Anket süresi: 1 dakika</strong><br><br>
+            Teşekkürler! 💚
+        </div>
+        <h1>Çevre Dostu Alışveriş Anketi</h1>
+
+        <div class="question">
+            <p>1. Çevre dostu ürünleri tercih eder misiniz?</p>
+            <input type="radio" name="cevredostu" value="herzaman"> Evet, her zaman <br>
+            <input type="radio" name="cevredostu" value="bazen"> Bazen, fiyatına bağlı <br>
+            <input type="radio" name="cevredostu" value="hayir"> Hayır, benim için önemli değil <br>
+        </div>
+
+        <div class="question">
+            <p>2. Geri dönüştürülebilir malzemeden üretilmiş bir ayakkabı satın almayı düşünür müsünüz?</p>
+            <input type="radio" name="ayakkabi" value="evet"> Kesinlikle evet <br>
+            <input type="radio" name="ayakkabi" value="uygunfiyat"> Fiyatı uygunsa evet <br>
+            <input type="radio" name="ayakkabi" value="hayir"> Hayır, ilgilenmiyorum <br>
+        </div>
+
+        <div class="question">
+            <p>3. Sürdürülebilir ürünler hakkında ne düşünüyorsunuz?</p>
+            <textarea name="dusunce" rows="4" cols="50" placeholder="Düşüncelerinizi buraya yazabilirsiniz..."></textarea>
+        </div>
+
+        <div class="question">
+            <p>4. Bu afişi gördüğünüzde sürdürülebilirlik hakkında farkındalığınız arttı mı?</p>
+            <input type="radio" name="farkindalik" value="evet"> Evet, daha fazla dikkat edeceğim <br>
+            <input type="radio" name="farkindalik" value="zaten"> Zaten farkındaydım <br>
+            <input type="radio" name="farkindalik" value="hayir"> Hayır, fikrim değişmedi <br>
+        </div>
+
+        <div class="question">
+            <p>5. Çevre dostu ürünler hakkında daha fazla bilgi almak ister misiniz?</p>
+            <input type="radio" name="bilgi" value="evet"> Evet, e-posta/SMS ile bilgilendirilebilirim <br>
+            <input type="radio" name="bilgi" value="hayir"> Hayır, ilgilenmiyorum <br>
+        </div>
+
+        <div class="question">
+            <p>6. Sosyal medyada çevre dostu ürünleri paylaşır mısınız?</p>
+            <input type="radio" name="paylasim" value="evet"> Evet <br>
+            <input type="radio" name="paylasim" value="hayir"> Hayır <br>
+        </div>
+
+        <button class="next-btn" onclick="showThankYouMessage()">Anketi Bitir</button>
+    </div>
+
+    <script>
+        function showThankYouMessage() {
+            alert("Teşekkür ederiz! Anketinizi tamamladınız.");
+        }
+    </script>
+</body>
+</html>
